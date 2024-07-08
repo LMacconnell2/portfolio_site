@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0px;
+  }
+  .nav-header {
+    padding: 0px; 
+    margin: 0px;
+    background-color: #454545;
+    align-items: center;
+  }
+  .nav-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    justify-content: center;
+  }
+  .nav-item {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    height: 45px;
+  }
+  .nav-item a {
+    color: #F19953;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Changa" , Helvetica, sans-serif;
+  }
+  .nav-item a:hover {
+    color: #FE5D26;
+  }
+  .nav-item:hover {
+    background-color: #353535;
+  }
+  .nav-header img {
+    height: 76px;
+    width: 300px;
+    object-fit: cover;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .nav-img:hover {
+    border: #252525 2px solid;
+    border-radius: 5px;
+  }
+  .footer-text {
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: sans-serif, Helvetica;
+    color: #F19953;
+  }
+  .intro {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    background-color: #353535;
+    color: #FFFFFF;
+    height: 600px;
+  }
+  .intro-text {
+    text-align: center;
+    font-size: 16px;
+    height: 250px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 175px;
+    background-color: #454545;
+    border: #FFFFFF 2px solid;
+    border-radius: 50px;
+  }
+  
+  .portrait {
+    margin: 0 auto;
+    width: 100%;
+    max-height: 600px;
+  }
+  .about-me-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #6D5959;
+    padding: 50px;
+  }
+  .card {
+    width: 250px;
+    border: #F19953 2px solid;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: sans-serif, Helvetica;
+    color: #FFFFFF;
+    margin: 0 auto;
+    background-color: #353535;
+  }
+  .card p {
+    margin: 15px;
+  }
+  .card-image {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: #F19953 2px solid;
+    border-radius: 8px 8px 0px 0px;
+  }
