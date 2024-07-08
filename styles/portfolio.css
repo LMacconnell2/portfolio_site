@@ -59,6 +59,7 @@ body {
     background-color: #353535;
     color: #FFFFFF;
     height: 600px;
+    font-family: "Changa" , Helvetica, sans-serif;
   }
   .intro-text {
     text-align: center;
@@ -70,6 +71,10 @@ body {
     background-color: #454545;
     border: #FFFFFF 2px solid;
     border-radius: 50px;
+  }
+  .intro p {
+    margin: 5%;
+    font-family: sans-serif, Helvetica;
   }
   
   .portrait {
