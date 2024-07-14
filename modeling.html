@@ -24,21 +24,123 @@
         </nav>
     </header>
     <section class="modeling-grid">
+      <div class="modeling-part-0">
         <p class="modeling-text-0">
-            In 2016, I began to learn and use Blender, an open source 3d modeling program. At the time, and even until this day I geared my 3d modeling for use in video games, specifically creating mods and add-ons for a train simulator. As such, most of my models are railroad related. Here are several of the projects I have worked on. 
-            Here is a screenshot of one of my very first projects, several railroad crossing signs. To make these, I made the initial model or “mesh” as it is sometimes referred, then UV mapped it to texture plains and used image textures to add the different colors and lettering that can be seen in the photo. This small project helped me learn the basics of 3d modeling and eventual exportation into the game engine.
+              In 2016, I began to learn and use Blender, an open source 3d modeling program. At the time, and even until this day I geared my 3d modeling for use in video games, specifically creating mods and add-ons for a train simulator. As such, most of my models are railroad related. Here are several of the projects I have worked on. 
+              Here is a screenshot of one of my very first projects, several railroad crossing signs. To make these, I made the initial model or “mesh” as it is sometimes referred, then UV mapped it to texture plains and used image textures to add the different colors and lettering that can be seen in the photo. This small project helped me learn the basics of 3d modeling and eventual exportation into the game engine.
         </p>
         <img class="modeling-image-0" src="images/crossbucks.webp" alt="a screenshot of the NARM crossbucks created by Logan MacConnell">
+      </div>
+      <div class="modeling-part-1">
+        <img class="modeling-image-1" src="images/FEF.webp" alt="A screenshot of the TBS FEFs creatde by Logan MacConnell">
         <p class="modeling-text-1">
             I worked on several other projects from there, eventually leading me to create 3d models of the Union Pacific 4-8-4 locomotives. This was one of my most lengthy projects. The model was created using blueprints based off the actual locomotive. This project also included something else of note, animations. The running gear on the sides of the locomotive was not easy to figure out how to do. I managed to complete the animation by using what is called an “armature” or “rig” in animation. Conceptually one may compare it to the skeleton in the human body. When an individual “bone” moves, it moves the mesh around it. Aside from animation, the locomotive also includes a custom script to allow the end user to change out parts of the locomotive, turn the headlight on and off, and even open the individual windows and doors of the locomotive. The script was written in a language specific to the game engine although the language is a derivative of C. 
             Lastly, it must be noted that I had to learn more advanced “material” creation techniques to provide the desired amount of visual detail while also maintain performance. This was done by creating an albedo (base color) map, a normal map (a blue-ish looking image file which allows for details to be added such as rivets without adding “geometry” to the base model.) and a “specular” map. (Essentially a texture telling the rendering engine how “shiny” the individual parts of the model are. A good example of its necessicity can be seen on a dirty care. With the dust and dirt, the car stops reflecting the environment around it and becomes noticeably duller. This is an example of where a “specular” map would be useful.) To further allow for performance on lower-end machines, the model employs “Level of Detail” transitions. (Essentially, the model become progressively less detailed the farther away the camera is from the object.)
         </p>
-        <img class="modeling-image-1" src="images/FEF.webp" alt="A screenshot of the TBS FEFs creatde by Logan MacConnell">
+      </div>
+      <div class="modeling-part-2">
         <p class="modeling-text-2">
             My most recent project has been a Western Pacific U30b. The project employs just about everything I had learned from previous projects, and then more. In the time between the steam locomotive project and this one, PBR or “physically based rendering” has become commonplace among 3d artists. The rendering engine now enables 3d artists not only to modify how “shiny” the object is, but also how reflective and “metallic” the model appears. An example of the difference between “metallicity” and “reflectiveness” can be seen in the comparison between two cubes. Suppose one is made of silver, and the other made of a hard and smooth plastic. The plastic cube still shines somewhat, btu the metal cube will be both shiny and will reflect the environment around it on its surface. Using All these techniques, I was able to produce a 3d model which looks very close to the real thing. 
         </p>
         <img class="modeling-image-2" src="images/u30.webp" alt="A screenshot of the TF U30bs created by Logan MacConnell">
+      </div>
     </section>
+    <div class="container">
+        <h2 class="gallery-text">Here are photos of several of my creations in complete renders:</h2>
+        <!-- Full-width images with number text. Code used from example provided by w3schools-->
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+            <img src="images/gallery0.png" style="width:100%" alt="render-image">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+            <img src="images/gallery1.png" style="width:100%" alt="render-image">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+            <img src="images/gallery2.png" style="width:100%" alt="render-image">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+            <img src="images/gallery3.png" style="width:100%" alt="render-image">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+            <img src="images/gallery4.png" style="width:100%" alt="render-image">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img src="images/gallery5.png" style="width:100%" alt="render-image">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="images/gallery0.png" style="width:100%" onclick="currentSlide(1)" alt="3d Rendered Creation">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/gallery1.png" style="width:100%" onclick="currentSlide(2)" alt="3d Rendered Creation">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/gallery2.png" style="width:100%" onclick="currentSlide(3)" alt="3d Rendered Creation">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/gallery3.png" style="width:100%" onclick="currentSlide(4)" alt="3d Rendered Creation">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/gallery4.png" style="width:100%" onclick="currentSlide(5)" alt="3d Rendered Creation">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/gallery5.png" style="width:100%" onclick="currentSlide(6)" alt="3d Rendered Creation">
+          </div>
+        </div>
+      </div>
+      <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+      </script>
     <footer>
         <nav class="nav-header">
             <ul class="nav-list">
@@ -49,7 +151,7 @@
                     <a href="index.html"><img src="images/logo_2024.png" alt="Logan MacConnell Logo 2024"></a>
                 </li>
                 <li class="footer-text">
-                    <h4>&copy Logan MacConnell - 2024</h4>
+                    <h4>&copy; Logan MacConnell - 2024</h4>
                 </li>
             </ul>
         </nav>
